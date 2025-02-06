@@ -149,6 +149,7 @@
 
 
         <!-- View Modal -->
+        
         <div data-bs-theme="dark" class="modal" tabindex="-1" v-if="viewModalOpen">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -161,7 +162,7 @@
                         <p ><strong>Organisation:</strong> {{ selectedDepartment.organisation.name }}</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" @click="viewModalOpen = false">Close</button>
+                        <button type="button" class="btn btn-secondary " @click="viewModalOpen = false">Close</button>
                     </div>
                 </div>
             </div>
@@ -275,6 +276,7 @@ export default {
             try {
                 const response = await axios.get("/api/departments");
                 this.departments = response.data;
+                console.log('FETCHED DEPARTMENTS',...this.departments);
             } catch (error) {
                 console.error("Error fetching departments:", error);
             }
@@ -285,6 +287,7 @@ export default {
             try {
                 const response = await axios.get("/api/organisations");
                 this.organisations = response.data;
+                console.log('FETCHED ORGANIZATIONS',...this.organisations);
             } catch (error) {
                 console.error("Error fetching organisations:", error);
             }
@@ -311,6 +314,7 @@ export default {
                 await axios.put(`/api/department/${this.selectedDepartment.id}`, this.selectedDepartment);
                 this.showUpdateSuccessModal = true;
                 this.editModalOpen = false;
+                console.log('UPDATED DEPARTMENT',this.selectedDepartment);
                 this.fetchDepartments();
 
                 setTimeout(() => {
