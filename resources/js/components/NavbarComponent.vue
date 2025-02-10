@@ -203,7 +203,7 @@
         <router-link to="/sender_id" class="sidebar-link">Sender ID</router-link>
       </li>
       <li class="sidebar-item">
-        <router-link to="/" class="sidebar-link">My Profile</router-link>
+        <router-link to="/profile" class="sidebar-link">My Profile</router-link>
       </li>
     </ul>
   </li>
