@@ -200,7 +200,7 @@
     <ul id="auth5" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar5">
       <li class="sidebar-item">
         <!-- Using router-link for Vue routing -->
-        <router-link to="/" class="sidebar-link">Sender ID</router-link>
+        <router-link to="/sender_id" class="sidebar-link">Sender ID</router-link>
       </li>
       <li class="sidebar-item">
         <router-link to="/" class="sidebar-link">My Profile</router-link>
