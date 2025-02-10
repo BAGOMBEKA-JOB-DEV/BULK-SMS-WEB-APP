@@ -9,6 +9,7 @@ import TemplateComponent from '../components/TemplateComponent.vue';
 import UserComponent from '../components/UserComponent.vue';
 import MessageComponent from '../components/MessageComponent.vue';
 import MessageReports from '../components/MessageReports.vue';
+import SenderIDComponent from '../components/SenderIDComponent.vue';
 
 
 const routes = [
@@ -57,6 +58,11 @@ component: MessageComponent,
 {
   path: '/message_reports',
   component: MessageReports,
+},
+//for sender ID
+{
+  path: '/sender_id',
+  component: SenderIDComponent,
 }
 
 ];
