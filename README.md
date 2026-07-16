@@ -1,9 +1,10 @@
 
-# 🚀 BULK SMS 📩
+/ 🚀 BULK SMS 📩
 
 ### **Send messages (SMS) with just a pinch on the keyboard!** ✨
 
-> **Please configure your API keys from your SMS service provider** to enable SMS sending.  
+> **Please configur 
+> e your API keys from your SMS service provider** to enable SMS sending.  
 > You should see the data immediately after inserting the form into the database.  
 > Make sure Laravel and Vue are installed in your project.
 
